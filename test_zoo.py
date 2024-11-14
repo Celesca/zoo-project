@@ -9,6 +9,8 @@ class TestZoo(unittest.TestCase):
         self.assertEqual(self.zoo.get_ticket_price(5), 50)
        
     # Add your additional test cases here.
+    def test_b1(self):
+        self.assertEqual(self.zoo.get_ticket_price(-1), "Error")
 
 if __name__ == '__main__':
     unittest.main()
